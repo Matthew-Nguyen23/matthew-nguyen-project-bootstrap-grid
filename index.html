@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <!-- BOOTSTRAP CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+
+  <title>Email Bootstrap Grid Project</title>
+</head>
+<body>
+  <!-- Entire Email Container for the Website -->
+  <div class="email-container">
+
+    <!-- TITLE -->
+    <h1 class="Title"> Bootstrap Grid Project</h1>
+
+    <!-- TOP BAR SEARCH MENU -->
+    <div class="search-bar">
+    <input class="search-bar" type="text" placeholder="Search Email">
+    <img src="" alt="">
+    </div>
+
+    <!-- Menu Selection-->
+    <div class="row">
+      <div class="col-4">
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action active" id="list-inbox-list" data-bs-toggle="list" href="#list-inbox" role="tab" aria-controls="list-inbox">Inbox</a>
+          <a class="list-group-item list-group-item-action" id="list-drafts-list" data-bs-toggle="list" href="#list-drafts" role="tab" aria-controls="list-drafts">Drafts</a>
+          <a class="list-group-item list-group-item-action" id="list-spam-list" data-bs-toggle="list" href="#list-spam" role="tab" aria-controls="list-spam">Spam</a>
+          <a class="list-group-item list-group-item-action" id="list-sent-list" data-bs-toggle="list" href="#list-sent" role="tab" aria-controls="list-sent">Sent</a>
+        </div>
+      </div>
+
+      <!--- Menu Tabs when clicked what does it appear? -->
+      <div class="col-8">
+        <div class="tab-content" id="nav-tabContent">
+          <!--- INBOX EMAIL -->
+          <div class="tab-pane fade show active" id="list-inbox" role="tabpanel" aria-labelledby="list-inbox-list">
+            <!-- INBOX -->
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Bay Valley Tech</div>
+                  Woohoo! Bay Valley Tech! Cohort 2310!
+                </div>
+                <span class="badge bg-primary rounded-pill">1</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Matthew Nguyen</div>
+                  Hello, this is my first email responsive template! Please check it out! ...
+                </div>
+                <span class="badge bg-primary rounded-pill">1</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Software Developer Job</div>
+                  You are HIRED! Welcome to our team of software developers ...
+                </div>
+                <span class="badge bg-primary rounded-pill">1</span>
+              </li>
+            </ol>
+            <!-- END OF INBOX -->
+        </div>
+        <!-- DRAFTS EMAIL -->
+          <div class="tab-pane fade" id="list-drafts" role="tabpanel" aria-labelledby="list-drafts-list">
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Draft</h5>
+                  <small>3 days ago</small>
+                </div>
+                <p class="mb-1">Continue your draft? </p>
+                <small>And some small print.</small>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Draft</h5>
+                  <small class="text-body-secondary">4 days ago</small>
+                </div>
+                <p class="mb-1">Send this? </p>
+                <small class="text-body-secondary">And some muted small print.</small>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Draft</h5>
+                  <small class="text-body-secondary">5 days ago</small>
+                </div>
+                <p class="mb-1">What is missing? </p>
+                <small class="text-body-secondary">And some muted small print.</small>
+              </a>
+            </div>
+          </div>
+          <!---- SPAM EMAIL -->
+          <div class="tab-pane fade" id="list-spam" role="tabpanel" aria-labelledby="list-spam-list">
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Spam</div>
+                  This is a bunch of spam email...
+                </div>
+                <span class="badge bg-primary rounded-pill">14</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Spam</div>
+                  This is a bunch of spam email...
+                </div>
+                <span class="badge bg-primary rounded-pill">14</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Spam</div>
+                  This is a bunch of spam email
+                </div>
+                <span class="badge bg-primary rounded-pill">14</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Spam</div>
+                  This is a bunch of spam email
+                </div>
+                <span class="badge bg-primary rounded-pill">14</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Spam</div>
+                  This is a bunch of spam email
+                </div>
+                <span class="badge bg-primary rounded-pill">14</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Spam</div>
+                  This is a bunch of spam email
+                </div>
+                <span class="badge bg-primary rounded-pill">14</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Spam</div>
+                  This is a bunch of spam email
+                </div>
+                <span class="badge bg-primary rounded-pill">14</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Spam</div>
+                  This is a bunch of spam email
+                </div>
+                <span class="badge bg-primary rounded-pill">14</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Spam</div>
+                  This is a bunch of spam email
+                </div>
+                <span class="badge bg-primary rounded-pill">14</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Spam</div>
+                  This is a bunch of spam email
+                </div>
+                <span class="badge bg-primary rounded-pill">14</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Spam</div>
+                  This is a bunch of spam email
+                </div>
+                <span class="badge bg-primary rounded-pill">14</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Spam</div>
+                  This is a bunch of spam email
+                </div>
+                <span class="badge bg-primary rounded-pill">14</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Spam</div>
+                  This is a bunch of spam email
+                </div>
+                <span class="badge bg-primary rounded-pill">14</span>
+              </li>
+            </ol>
+          </div>
+          <!---- SENT EMAIL-->
+          <div class="tab-pane fade" id="list-sent" role="tabpanel" aria-labelledby="list-sent-list">...</div>
+        </div>
+      </div>
+    </div>
+
+    
+    
+
+  </div>
+  
+
+
+  <!-- BOOTSTRAP JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    
+  </script>
+
+</body>
+</html>
