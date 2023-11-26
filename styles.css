@@ -1,10 +1,4 @@
 
-.search-bar {
-  display: flex;
-  justify-content: flex-start;
-  padding: 1rem;
-  margin: 0;
-}
 .Title {
   display: flex;
   justify-content: center;
